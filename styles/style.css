@@ -1,0 +1,160 @@
+@import url('./clear.css');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('./fonts.css');
+
+
+.header__main {
+  background-image: url('/images/header/header-bg.jpg');
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__logo {
+  position: absolute;
+  left: 250px;
+  top: 75px;
+  line-height: 190%;
+  z-index: 5;
+}
+
+.logo {
+  width: 60px;
+  height: 68px;
+  font-family:'Playfair Display', serif;
+  font-size: 36px;
+}
+
+.logo__point {
+  color: #41EAD4;
+}
+
+.header__search {
+  background-image: url('../images/header/search1.png');
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 1434px;
+  top: 97px;
+}
+
+.header__menu-btn {
+  position: absolute;
+  width: 167px;
+  height: 62px;
+  left: 1490px;
+  top: 77px;
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00C9E0;
+  box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
+  border-radius: 48px;
+}
+
+.btn__text::after {
+  content: '';
+  position: absolute;
+  margin: 9px 0 0 42px;
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background: #FFFFFF;
+}
+
+.header__title {
+  text-align: center;
+  font-family: 'Noe Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 120px;
+  margin-bottom: 28px;
+}
+
+.header__subtitle {
+  text-align: center;
+  font-family: 'Larsseit';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.header__text {
+  text-align: center;
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  max-width: 643px;
+  margin: 0 auto;
+  margin-bottom: 202px;
+}
+
+.header__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 160px 0 252px;
+}
+
+.header__scroll {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+  transform: rotate(-90deg);
+}
+
+.header__line {
+  display: inline-block;
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(180deg, #09F4F4 0%, #00C9E0 100%);
+}
+
+.header__socialmedia {
+  flex-direction: column;
+}
+
+.socialmedia {
+  height: 114px;
+  width: 114px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialmedia__icon {
+  height: 24px;
+  width: 24px;
+  background-repeat: no-repeat;
+}
+
+.socialmedia__twitter {
+  background-image: url('../images/socialmedia/twitter-icon.png');
+}
+
+.socialmedia__instagram {
+  background-image: url('../images/socialmedia/instagram-icon.png');
+}
+
+.socialmedia__facebook {
+  background-image: url('../images/socialmedia/facebook-icon.png');
+} 

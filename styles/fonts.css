@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Noe Display';
+  src: url('../fonts/NoeDisplay-Medium.woff') format('woff'),
+    url('../fonts/NoeDisplay-Medium.ttf') format('truetype'),
+    url('../fonts/NoeDisplay-Medium.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../fonts/Larsseit.woff2') format('woff2'),
+    url('../fonts/Larsseit.woff') format('woff'),
+    url('../fonts/Larsseit.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
