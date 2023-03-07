@@ -2,9 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 @import url('./fonts.css');
 
-.header__container {
-  background-image: linear-gradient(to bottom, rgba(1, 22, 39, 0) 66%, rgba(1, 22, 39, 1) 92%, rgba(1, 22, 39, 1) ), url(/images/header/header-bg.jpg);
+body {
+  background-color: rgba(1, 22, 39, 1);
+}
+
+.container {
   height: 100vh;
+}
+
+/* Night trips block */
+.header__container {
+  background-image: linear-gradient(to bottom, rgba(1, 22, 39, 0) 66%, rgba(1, 22, 39, 1) 92%, rgba(1, 22, 39, 1) ), url('../images/header/header-bg.jpg');
 }
 
 .header__main {
@@ -169,4 +177,14 @@
 
 .socialmedia__facebook {
   background: url('../images/socialmedia/facebook-icon.png') no-repeat center;
-} 
+}
+
+/* Pick your trip block */
+.pick__container {
+  background: url('../images/pick/pick-bg1.svg') no-repeat;
+  background-size: cover;
+}
+
+.pick__main {
+  max-width: 1355px;
+}
