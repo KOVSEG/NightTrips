@@ -8,6 +8,22 @@ body {
 
 .container {
   height: 100vh;
+  margin-bottom: 55px;
+}
+
+.block__title {
+  font-family: 'Noe Display';
+  font-weight: 700;
+  font-size: 72px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00C9E0;
+  box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
+  border-radius: 48px;
 }
 
 /* Night trips block */
@@ -65,23 +81,14 @@ body {
   text-transform: uppercase;
 }
 
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #00C9E0;
-  box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
-  border-radius: 48px;
-}
-
-.btn__text::after {
+.header__menu-btn::after {
   content: '';
   position: absolute;
-  margin: 9px 0 0 42px;
+  margin-left: 165px;
   display: inline-block;
   width: 30px;
   height: 2px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .header__content {
@@ -187,4 +194,175 @@ body {
 
 .pick__main {
   max-width: 1355px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.pick__inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pick__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+.pick__title {
+  letter-spacing: 0.15rem;
+}
+
+.pick__uppertext {
+  font-family: 'Larsseit';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.pick__multiplesign {
+  color: rgba(65, 234, 212, 1);
+  font-size: 30px;
+  margin: 0 39px 0 51px;
+  margin-top: 15px;
+}
+
+.pick__uppertext {
+  white-space: pre-line;
+  margin-bottom: 10px;
+}
+
+.pick__menu {
+  width: 1200px;
+  width: 100%;
+  border-bottom: 2px solid rgba(65, 234, 212, 0.3);
+  margin-bottom: 150px;
+}
+
+.menu__tabs {
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 89px 40px 86px;
+}
+
+.pickmenu__tabs {
+  font-family: 'Larsseit';
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.pick__info {
+  display: flex;
+  flex-direction: row;
+} 
+
+.pick__image {
+  width: 486px;
+  height: 607px;
+  background: url('../images/pick/images/landscape-dunes.jpg') no-repeat center;
+  border-radius: 8px;
+  margin-right: 126px;
+}
+
+.pick__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description__title {
+  margin-bottom: 34px;
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.pick__suptext,
+.pick__text {
+  white-space: pre-line;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.pick__suptext {
+  margin-bottom: 35px;
+}
+
+.pick__text {
+  margin-bottom: 45px;
+  font-weight: 400;
+}
+
+.pick__info-btn {
+  width: 282px;
+  height: 65px;
+}
+
+.btn__text {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 190%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.pick__info-btn::after {
+  content: '';
+  position: absolute;
+  margin-left: 280px;
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background: #ffffff;
+}
+
+/* .pick__bottom {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 811px;
+  left: 22px;
+  z-index: -1;
+} */
+
+.pick__bottom {
+  position: relative;
+}
+
+.pick__cube {
+  background: url('../images/pick/images/cube-dots.png') no-repeat;
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: -175px;
+  left: 24px;
+  z-index: -1;
+}
+
+.pick__right {
+  position: absolute;
+  top: -91px;
+  right: 31px;
+  width: 130px;
+}
+
+.pick__share {
+  font-family: 'Larsseit';
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  margin-bottom: 20px;
+}
+
+.pick__socialmedia {
+  display: flex;
+  flex-direction: row;
 }
