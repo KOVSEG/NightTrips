@@ -8,7 +8,6 @@ body {
 
 .container {
   height: 100vh;
-  margin-bottom: 55px;
 }
 
 .block__title {
@@ -29,6 +28,7 @@ body {
 /* Night trips block */
 .header__container {
   background-image: linear-gradient(to bottom, rgba(1, 22, 39, 0) 66%, rgba(1, 22, 39, 1) 92%, rgba(1, 22, 39, 1) ), url('../images/header/header-bg.jpg');
+  margin-bottom: 41px;
 }
 
 .header__main {
@@ -197,6 +197,7 @@ body {
   width: 100%;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 193px;
 }
 
 .pick__inner {
@@ -210,10 +211,6 @@ body {
   flex-direction: row;
   align-items: center;
   margin-bottom: 75px;
-}
-
-.pick__title {
-  letter-spacing: 0.15rem;
 }
 
 .pick__uppertext {
@@ -247,7 +244,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 89px 40px 86px;
+  margin: 0 89px 39px 86px;
 }
 
 .pickmenu__tabs {
@@ -260,9 +257,13 @@ body {
 .pick__info {
   display: flex;
   flex-direction: row;
-} 
+}
 
 .pick__image {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  position: relative;
   width: 486px;
   height: 607px;
   background: url('../images/pick/images/landscape-dunes.jpg') no-repeat center;
@@ -270,15 +271,81 @@ body {
   margin-right: 126px;
 }
 
+.pick__paragraph {
+  position: absolute;
+  top: 249px;
+  left: -93px;
+}
+
+.paragraph__number {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.15em;
+  color: #41EAD4;
+}
+.paragraph__number::before {
+  content: '';
+  display: block;
+  width: 173px;
+  height: 13px;
+  border-top: 2px solid #41EAD4;
+  border-left: 2px solid #41EAD4;
+}
+
+.paragraph__title {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  white-space: pre-line;
+}
+
+.pick__arrows {
+  width: 132px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pick__arrow {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  background: #011627;
+  box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
+}
+
+.pick__arrow img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.arrow__previous {
+  border-radius: 10px 0 0 0;
+}
+.arrow__next {
+  border-radius: 0 0 10px 0;
+}
+
+
 .pick__description {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .description__title {
+  margin-top: 60px;
   margin-bottom: 34px;
-  font-size: 70px;
+  font-size: 64px;
   font-weight: 400;
 }
 
@@ -342,15 +409,26 @@ body {
   height: 230px;
   position: absolute;
   top: -175px;
-  left: 24px;
+  left: 22px;
   z-index: -1;
 }
 
 .pick__right {
   position: absolute;
-  top: -91px;
+  top: -86px;
   right: 31px;
   width: 130px;
+}
+
+.pick__right::after {
+  content: '';
+  display: block;
+  width: 133px;
+  height: 32px;
+  margin-top: -11px;
+  margin-left: 1px;
+  border-right: 2px solid #41EAD4;
+  border-bottom: 2px solid #41EAD4;
 }
 
 .pick__share {
@@ -365,4 +443,5 @@ body {
 .pick__socialmedia {
   display: flex;
   flex-direction: row;
+  width: 118px;
 }
