@@ -186,12 +186,15 @@ body {
   background: url('../images/socialmedia/facebook-icon.png') no-repeat center;
 }
 
-/* Pick your trip block */
-.pick__container {
+
+
+.block__bg {
   background: url('../images/pick/pick-bg1.svg') no-repeat;
   background-size: cover;
 }
 
+
+/* Pick your trip block */
 .pick__main {
   max-width: 1355px;
   width: 100%;
@@ -390,15 +393,6 @@ body {
   background: #ffffff;
 }
 
-/* .pick__bottom {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  top: 811px;
-  left: 22px;
-  z-index: -1;
-} */
-
 .pick__bottom {
   position: relative;
 }
@@ -444,4 +438,27 @@ body {
   display: flex;
   flex-direction: row;
   width: 118px;
+}
+
+/* About Us block */
+.about__us {
+  background: url('../images/about/images/about-bg.png') no-repeat;
+  background-size: cover;
+}
+
+.about__container {
+  position: relative;
+  max-width: 1391px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 105px;
+}
+
+.about__dots {
+  background: url('../images/about/images/about-dots.png') no-repeat;
+  width: 70px;
+  height: 470px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
