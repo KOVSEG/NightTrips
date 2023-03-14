@@ -186,28 +186,26 @@ body {
   background: url('../images/socialmedia/facebook-icon.png') no-repeat center;
 }
 
-
-
+/* Common bg for Pick your trip and About Us blocks */
 .block__bg {
   background: url('../images/pick/pick-bg1.svg') no-repeat;
   background-size: cover;
 }
 
-
 /* Pick your trip block */
 .pick__main {
-  max-width: 1355px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   position: relative;
   margin-bottom: 193px;
 }
 
-.pick__inner {
+/* .pick__inner {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-}
+} */
 
 .pick__header {
   display: flex;
@@ -368,7 +366,7 @@ body {
   font-weight: 400;
 }
 
-.pick__info-btn {
+.btn__common {
   width: 282px;
   height: 65px;
 }
@@ -383,7 +381,7 @@ body {
   text-transform: uppercase;
 }
 
-.pick__info-btn::after {
+.btn__common::after {
   content: '';
   position: absolute;
   margin-left: 280px;
@@ -403,15 +401,15 @@ body {
   height: 230px;
   position: absolute;
   top: -175px;
-  left: 22px;
+  left: -56px;
   z-index: -1;
 }
 
 .pick__right {
   position: absolute;
-  top: -86px;
-  right: 31px;
-  width: 130px;
+  top: -83px;
+  right: -61px;
+  width: 134px;
 }
 
 .pick__right::after {
@@ -428,7 +426,7 @@ body {
 .pick__share {
   font-family: 'Larsseit';
   font-weight: 400;
-  font-size: 17px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   margin-bottom: 20px;
@@ -451,7 +449,99 @@ body {
   max-width: 1391px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 105px;
+}
+.about__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 142px;
+}
+
+.about__description {
+  margin-top: 50px;
+}
+
+.about__title {
+  font-family: 'Noe Display';
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 79px;
+  letter-spacing: -0.02em;
+}
+
+.common__text {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  white-space: pre-line;
+  margin-bottom: 10px;
+}
+
+.about__text {
+  color: rgba(255, 255, 255, 0.500);
+}
+
+.about__cards {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 790px;
+}
+
+.about__card {
+  position: relative;
+  width: 395px;
+  height: 395px
+}
+
+.about__card.card-1 { 
+  background: url('../images/about/images/aboutcard-1.jpg') no-repeat center;
+}
+.about__card.card-2 { 
+  background: url('../images/about/images/aboutcard-2.jpg') no-repeat center;
+  opacity: 0.4;
+}
+.about__card.card-3 { 
+  background: url('../images/about/images/aboutcard-3.jpg') no-repeat center;
+  opacity: 0.4;
+}
+.about__card.card-4 { 
+  background: url('../images/about/images/aboutcard-4.jpg') no-repeat center;
+  opacity: 0.4;
+}
+
+.card__name {
+  position: absolute;
+  top: 270px;
+  left: -50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
+  border-radius: 8px;
+  width: 186px;
+  height: 75px;
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color: rgba(0,0,0,1);
+  text-transform: uppercase;
+}
+
+.card__name span {
+  color: rgba(0, 201, 224, 1);
 }
 
 .about__dots {
@@ -459,6 +549,6 @@ body {
   width: 70px;
   height: 470px;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 302px;
+  right: 16px;
 }
