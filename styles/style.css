@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 @import url('./fonts.css');
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: rgba(1, 22, 39, 1);
 }
@@ -688,4 +694,75 @@ body {
   text-align: center;
   letter-spacing: 0.07em;
   white-space: pre-line;
+}
+
+/* Footer block */
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+  padding-top: 135px;
+}
+
+.footer__menu {
+  max-width: 1025px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 68px;
+}
+
+.footer__list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 180px;
+}
+
+.list__about,
+.list__faq,
+.list__events,
+.list__contact,
+.list__follow {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.list__arrow {
+  background: url('../images/footer/images/divider.png') no-repeat center;
+  width: 56px;
+  height: 7px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.footer__follow {
+  max-width: 108px;
+  width: 100%;
+}
+
+.copyright {
+  margin-bottom: 45px;
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
 }
