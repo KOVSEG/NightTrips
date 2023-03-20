@@ -148,7 +148,7 @@ body {
 .header__scroll {
   font-family: 'Larsseit';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -192,7 +192,8 @@ body {
 /* Common bg for Pick your trip and About Us blocks */
 .block__bg {
   background: url('../images/pick/pick-bg1.svg') no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
+  background-position-y: -90px;
 }
 
 /* Pick your trip block */
@@ -246,10 +247,31 @@ body {
 }
 
 .pickmenu__tabs {
+  position: relative;
   font-family: 'Larsseit';
   font-size: 16px;
   font-weight: 400;
   text-align: center;
+}
+
+.choosed {
+  font-family: 'Larsseit';
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #41EAD4;
+}
+
+.choosed::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 57px;
+  left: -86px;
+  width: 282px;
+  height: 4px;
+  background: #41EAD4;
+  border-radius: 13px;
 }
 
 .pick__info {
@@ -439,6 +461,7 @@ body {
 .about__us {
   background: url('../images/about/images/about-bg.png') no-repeat;
   background-size: cover;
+  background-position-y: 40px;
 }
 
 .about__container {
@@ -559,6 +582,7 @@ body {
   background: #011627;
   border-radius: 8px;
   margin-bottom: 290px;
+  margin-top: 20px;
 }
 
 .vertical__line {
