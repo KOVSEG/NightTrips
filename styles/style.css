@@ -31,6 +31,14 @@ body {
   border-radius: 48px;
 }
 
+.choosed {
+  font-family: 'Larsseit';
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #41EAD4;
+}
+
 /* Night trips block */
 .header__container {
   background-image: linear-gradient(to bottom, rgba(1, 22, 39, 0) 66%, rgba(1, 22, 39, 1) 92%, rgba(1, 22, 39, 1) ), url('../images/header/header-bg.jpg');
@@ -254,14 +262,6 @@ body {
   text-align: center;
 }
 
-.choosed {
-  font-family: 'Larsseit';
-  font-size: 18px;
-  line-height: 110%;
-  letter-spacing: -0.02em;
-  color: #41EAD4;
-}
-
 .choosed::after {
   content: '';
   display: block;
@@ -286,7 +286,25 @@ body {
   position: relative;
   width: 486px;
   height: 607px;
+}
+
+.chill__adventure {
   background: url('../images/pick/images/landscape-dunes.jpg') no-repeat center;
+  border-radius: 8px;
+  margin-right: 126px;
+}
+.spooky__times {
+  background: no-repeat center;
+  border-radius: 8px;
+  margin-right: 126px;
+}
+.desert__madness {
+  background: no-repeat center;
+  border-radius: 8px;
+  margin-right: 126px;
+}
+.outin__thewild {
+  background: no-repeat center;
   border-radius: 8px;
   margin-right: 126px;
 }
@@ -455,6 +473,14 @@ body {
   display: flex;
   flex-direction: row;
   width: 118px;
+}
+
+.active__link {
+  display: block;
+}
+
+.disactive__link {
+  display: none;
 }
 
 /* About Us block */
