@@ -586,6 +586,10 @@ body {
   text-transform: uppercase;
 }
 
+.hide__role {
+  display: none;
+}
+
 .card__name span {
   color: rgba(0, 201, 224, 1);
 }
